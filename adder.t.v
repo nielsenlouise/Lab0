@@ -16,7 +16,7 @@ module testFull4BitAdder();
     $dumpvars();
 
     // Test Cases with two positive numbers, no overflow
-    $display("Test Cases with 2 Positive Numbers, No Overflow");
+    $display("    Positive Numbers, No Overflow");
     $display("A     B     | Sum   Exp. | Cout  Exp. | Over  Exp.  ");
     a[3]=0; a[2]=0;a[1]=0;a[0]=0;
     b[3]=0; b[2]=1;b[1]=1;b[0]=0;
@@ -33,7 +33,7 @@ module testFull4BitAdder();
     $display("-------------------------------------------------");
 
     //Test Cases with two positives, with overflow
-    $display("Test Cases with 2 Positive Numbers, With Overflow");
+    $display("    Positive Numbers, With Overflow");
     $display("A     B     | Sum   Exp. | Cout  Exp. | Over  Exp.  ");
     a[3]=0; a[2]=1;a[1]=0;a[0]=1;
     b[3]=0; b[2]=0;b[1]=1;b[0]=1;
@@ -46,7 +46,7 @@ module testFull4BitAdder();
     $display("-------------------------------------------------");
 
     // Test Cases with two negatives and no overflow
-    $display("Test Cases with 2 Negative Numbers, No Overflow");
+    $display("    Negative Numbers, No Overflow");
     $display("A     B     | Sum   Exp. | Cout  Exp. | Over  Exp.  ");
     a[3]=1; a[2]=1;a[1]=1;a[0]=0;
     b[3]=1; b[2]=1;b[1]=0;b[0]=0;
@@ -63,7 +63,7 @@ module testFull4BitAdder();
     $display("-------------------------------------------------");
 
     // Test Cases with two negatives, with overflow
-    $display("Test Cases with 2 Negative Numbers, With Overflow");
+    $display("    Negative Numbers, With Overflow");
     $display("A     B     | Sum   Exp. | Cout  Exp. | Over  Exp.  ");
     a[3]=1; a[2]=1;a[1]=1;a[0]=0;
     b[3]=1; b[2]=0;b[1]=0;b[0]=1;
@@ -76,7 +76,7 @@ module testFull4BitAdder();
     $display("-------------------------------------------------");
 
     // Test Cases with positive and negative, and carryout of 1
-    $display("Test Cases with Negative & Positive Numbers, with Carryout");
+    $display("    Negative & Positive Numbers, with Carryout");
     $display("A     B     | Sum   Exp. | Cout  Exp. | Over  Exp.  ");
     a[3]=1; a[2]=1;a[1]=1;a[0]=1;
     b[3]=0; b[2]=1;b[1]=1;b[0]=1;
@@ -89,7 +89,7 @@ module testFull4BitAdder();
     $display("-------------------------------------------------");
 
     // Test Cases with positive and negative, no carryout
-    $display("Test Cases with Positive & Negative Numbers, No Carryout");
+    $display("    Negative & Positive Numbers, No Carryout");
     $display("A     B     | Sum   Exp. | Cout  Exp. | Over  Exp.  ");
     a[3]=0; a[2]=0;a[1]=1;a[0]=0;
     b[3]=1; b[2]=0;b[1]=0;b[0]=1;
