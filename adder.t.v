@@ -12,6 +12,9 @@ module testFull4BitAdder();
     FullAdder4bit adder (sum[3:0], carryout, overflow, a, b);
     initial begin
 
+    $dumpfile("adder.vcd");
+    $dumpvars();
+
     // Test Cases with two positive numbers, no overflow
     $display("Test Cases with 2 Positive Numbers, No Overflow");
     $display("A     B     | Sum   Exp. | Cout  Exp. | Over  Exp.  ");
