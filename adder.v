@@ -1,3 +1,7 @@
+`define AND and #50  //delays for gates
+`define OR or #50
+`define XOR xor #50
+
 module structuralFullAdder
 (
     output sum,
@@ -6,13 +10,13 @@ module structuralFullAdder
     input b,
     input carryin
 );
-    wire norAout, andAout, andBout;
+    wire xorAout, andAout, andBout;
 
-    xor xorA(norAout, a, b);
-    and andA(andAout, a, b);
-    xor xorB(sum, norAout, carryin);
-    and andB(andBout, norAout, carryin);
-    or orgate(carryout, andAout, andBout);
+    `XOR xorA(xorAout, a, b);
+    `AND andA(andAout, a, b);
+    `XOR xorB(sum, xorAout, carryin);
+    `AND andB(andBout, xorAout, carryin);
+    `OR orgate(carryout, andAout, andBout);
 endmodule
 
 module FullAdder4bit
