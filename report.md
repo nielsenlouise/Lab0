@@ -60,6 +60,29 @@ Here is a table of our test results. It is identical to our simulation test benc
 
 ### Propagation Delays
 
+**Calculated Full Adder Timing**
+
+|      | A | B | C<sub>in</sub> |
+|------|---|---|-----|
+| Sum  | 2 | 2 | 1   |
+| C<sub>out</sub> | 3 | 3 | 2   |
+
+**Calculated 4 bit Full Adder Timing**
+
+|    | A/B0 | A/B1 | A/B2 | A/B3 |
+|----|------|------|------|------|
+| S0 | 2    | -    |  -    |  -   |
+| C0 | 3    | -    | -     | -    |
+| S1 | 3    | 2    | -    | -    |
+| C1 | 5    | 3    | -    | -    |
+| S2 | 5    | 3    | 2    | -    |
+| C2 | 7    | 5    | 3    | -    |
+| S3 | 7    | 5    | 3    | 2    |
+| C3 | 9    | 7    | 5    | 3    |
+| O  | 10   | 8    | 6    | 4    |
+
+![4 bit full adder diagram](/images/waveform.png)
+
 ## FPGA testing
 
 ### 16 Test Cases
