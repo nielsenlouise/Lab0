@@ -70,12 +70,7 @@ In order to test our FPGA, we chose the same test cases that we used in our simu
 * Positive and Negative Numbers with Carryout
 * Positive and Negative Numbers without Carryout
 
-We were able to confirm that our FPGA 4-bit Adder was working because we got the expected results for each test case. A table of the results for each test is shown below. It is identical to the table we generated with our simulation test bench.
-
-A | B
------------- | -------------
-0000 | 1111
-0000 | 1111
+We were able to confirm that our FPGA 4-bit Adder was working because we got the expected results for each test case. A table of the results for each test can be seen in the above section because we used the exact same test cases and had the same results. 
 
 ### Test Example
 To demonstrate our working FPGA, we have a [short video](https://youtu.be/c9_2-7uq8pI) on YouTube. In this test, we chose the case where A=0011 and B=1111. We would expect our sum too be 0010 and our carry out to be 1. First we input A using the four switches, and press the corresponding button. The photo below shows the state of the board at this point. Of the four LEDs above the switches, lit LEDS indicate a 1.
@@ -91,6 +86,6 @@ the functionality of our FPGA 4-bit adder.
 
 <img src="https://raw.githubusercontent.com/nielsenlouise/Lab0/master/images/FPGA_CO.jpg" width="400px" />
 
-### Summary Statistics: Resources Used
-
-WIP
+### Summary Statistics: Resources Utilized
+![Utilization Summary](/images/utilization_summary.png)
+Based on this summary report, we can see how much of each resource was used on the FPGA. Overall, the 4-bit adder didn't require much of anything because it is relatively simple and there are lots of available LUTs and FFs. By looking at the Hierarchy Report, we could see that 5 of the 7 Slice LUTs were used by opA_mem....
