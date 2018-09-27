@@ -16,10 +16,6 @@ The following diagram describes how we used this adder as a component in our 4 b
 
 We referred to the [number systems slides](https://canvas.instructure.com/courses/1414489/pages/day-04-number-systems) from class 04 to inform our design, as well as our arithmetic.
 
-### Verilog
-
-Our full adder is a copy-paste of Camille's HW2. We used the `structuralFullAdder` module as a component in the `FullAdder4bit` module. Camille wrote most of the Verilog but we all understand how it works.
-
 ### Test cases
 
 We chose these 16 test cases with the intent of covering all possible failures:
@@ -55,7 +51,7 @@ Here is a table of our test results. It is identical to our simulation test benc
 | Negatives with overflow | | | | |
 | 1110 | 1001 | 0111 | 1 | 1 |
 | 1000 | 1011 | 0011 | 1 | 1 |
-| Positive/negative | | | | | 
+| Positive/negative | | | | |
 | 1111 | 0111 | 0110 | 1 | 0 |
 | 0010 | 1001 | 1011 | 0 | 0 |
 | 0000 | 1000 | 1000 | 0 | 0 |
