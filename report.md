@@ -45,12 +45,21 @@ Here is a table of our test results. It is identical to our simulation test benc
 | 0100 | 0010 | 0110 | 0 | 0 |
 | 0000 | 0110 | 0110 | 0 | 0 |
 | 0011 | 0100 | 0111 | 0 | 0 |
+| Positives with overflow | | | | |
+| 0101 | 0011 | 1000 | 0 | 1 |
+| 0110 | 0110 | 1100 | 0 | 1 |
 | Negatives | | | | |
 | 1110 | 1100 | 1010 | 1 | 0 |
 | 1011 | 1110 | 1001 | 1 | 0 |
 | 1111 | 1101 | 1100 | 1 | 0 |
-
-| Postive/negative | | | | | 
+| Negatives with overflow | | | | |
+| 1110 | 1001 | 0111 | 1 | 1 |
+| 1000 | 1011 | 0011 | 1 | 1 |
+| Positive/negative | | | | | 
+| 1111 | 0111 | 0110 | 1 | 0 |
+| 0010 | 1001 | 1011 | 0 | 0 |
+| 0000 | 1000 | 1000 | 0 | 0 |
+| 0011 | 1111 | 0010 | 1 | 0 |
 
 
 ### Propagation Delays
