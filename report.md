@@ -88,5 +88,5 @@ the functionality of our FPGA 4-bit adder.
 
 ### Summary Statistics: Resources Utilized
 ![Utilization Summary](/images/utilization_summary.png)
-Based on this summary report, we can see how much of each resource was used on the FPGA. Overall, the 4-bit adder didn't require much of anything because it is relatively simple and there are lots of available LUTs and FFs. By looking at the Hierarchy Report, we could see that 5 of the 7 Slice LUTs were used by opA_mem....
+Based on this summary report, we can see how much of each resource was used on the FPGA. Overall, the 4-bit adder didn't require much of anything because it is relatively simple and there are lots of available LUTs and FFs. Based on the percentages, we mostly used IO resources. By looking at the Hierarchy Report, we could see that 5 of the 7 Slice LUTs were used by opA_mem.
 ![Utilization Summary](/images/utilization_hierarchy.png)
