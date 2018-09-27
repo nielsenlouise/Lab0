@@ -1,2 +1,7 @@
 *.vvp
 *.vcd
+*.log
+*.jou
+*.xdc
+
+lab0/
