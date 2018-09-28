@@ -1,4 +1,4 @@
-# Team ???? Lab 0 Report
+# Team Nice Try Lab 0 Report
 
 Carl Moser, Louise Nielsen, Camille Xue
 
@@ -69,19 +69,21 @@ Here is a table of our test results. It is identical to our simulation test benc
 
 **Calculated 4 bit Full Adder Timing**
 
-|    | A/B0 | A/B1 | A/B2 | A/B3 |
-|----|------|------|------|------|
-| S0 | 2    | -    |  -    |  -   |
-| C0 | 3    | -    | -     | -    |
-| S1 | 3    | 2    | -    | -    |
-| C1 | 5    | 3    | -    | -    |
-| S2 | 5    | 3    | 2    | -    |
-| C2 | 7    | 5    | 3    | -    |
-| S3 | 7    | 5    | 3    | 2    |
-| C3 | 9    | 7    | 5    | 3    |
-| O  | 10   | 8    | 6    | 4    |
+|           | A/B0 | A/B1 | A/B2 | A/B3 |
+|-----------|------|------|------|------|
+| S0        | 2    | -    | -    | -    |
+| C0        | 3    | -    | -    | -    |
+| S1        | 3    | 2    | -    | -    |
+| C1        | 5    | 3    | -    | -    |
+| S2        | 5    | 3    | 2    | -    |
+| C2        | 7    | 5    | 3    | -    |
+| S3        | 7    | 5    | 3    | 2    |
+| C3        | 9    | 7    | 5    | 3    |
+| Overflow  | 10   | 8    | 6    | 4    |
 
 ![4 bit full adder diagram](/images/waveform.png)
+
+The numbers and letters in the A and B waves, are the values of A and B. The reason that some of them are letters is because of the leading 1 to make the values represent negative numbers. Values for Carryout and Overflow can take time to settle and this can be seen around 8µs and 11 µs. The switching that occurs in the sum happens because the different parts of sum, S0, S1, S2, S3, become available at different times.
 
 ## FPGA testing
 
